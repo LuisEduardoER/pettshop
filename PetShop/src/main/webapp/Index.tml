@@ -1,0 +1,20 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd">
+
+       <head>
+       <title>Pet Shop Start Page</title>
+       </head>
+       
+       <body>
+       <h1>Pet Shop Start Page</h1>
+     
+    <p> Menu: </p>
+    <ul>
+    	<li><a href="#" t:type="PageLink" t:page="EntryPet"> Entry Pet</a></li>
+    	<li><a href="#" t:type="PageLink" t:page="ViewPet"> View Pet</a></li>
+    </ul>
+    
+     <hr/>
+    </body>
+   
+   </html>
+          

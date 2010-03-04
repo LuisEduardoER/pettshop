@@ -1,0 +1,30 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd">
+
+       <head>
+       <title>Pet Shop - pet view page</title>
+       </head>
+       
+       <body>
+       <h1>Pet Shop - pet view page</h1>
+       <p> List of pet: </p>
+       
+       <table width="100%" border="1">
+        <tr>
+        <th>Pet Name:</th>
+        <th>type:</th>
+        <th>Description:</th>
+        </tr>
+        <tr>
+        <td align="center">${singlePet.petName}</td>
+        <td align="center">${singlePet.type}</td>
+        <td align="center">${singlePet.shortDescription}</td>
+        </tr>
+        </table>
+        <p>
+         <a href="#" t:type="PageLink" t:page="Index"> Go to Index page</a>
+        </p>
+        
+     <hr/>
+    </body>
+   </html>
+          

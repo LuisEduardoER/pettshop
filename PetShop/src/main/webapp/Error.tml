@@ -1,0 +1,18 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd">
+
+       <head>
+       <title>Pet Shop - error page</title>
+       </head>
+       
+       <body>
+       <h1>Pet Shop - error page</h1>
+       	<p>
+       		${error}.
+        </p>
+        
+        <p> [<t:pagelink t:page="Index">Go to index page</t:pagelink>]
+        </p>
+     <hr/>
+    </body>
+   </html>
+          
