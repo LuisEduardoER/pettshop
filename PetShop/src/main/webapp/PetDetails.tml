@@ -1,0 +1,19 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd">
+    <head>
+        <title>PetShop - pet details page</title>
+    </head>
+    <body>
+        <h1>PetShop - Pet details page</h1>
+
+        <p> Pet details: </p>
+
+        <p>Pet Name: ${chosenPet.petName}</p>
+        <p>Pet tye: ${chosenPet.type}</p>
+        <p>pet short description: ${chosenPet.shortDescription}</p>
+        
+
+        <p>
+            <a href="#" t:type="PageLink" t:page="Index"> Go to Index page</a>
+        </p>
+    </body>
+</html>

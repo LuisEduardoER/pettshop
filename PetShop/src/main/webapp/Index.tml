@@ -8,12 +8,26 @@
        <h1>Pet Shop Start Page</h1>
      
     <p> Menu: </p>
-    <ul>
-    	<li><a href="#" t:type="PageLink" t:page="EntryPet"> Entry Pet</a></li>
-    	<li><a href="#" t:type="PageLink" t:page="ViewPet"> View Pet</a></li>
-    </ul>
     
-     <hr/>
+  
+ <p>
+            <a href="#" t:type="PageLink" t:page="EntryPet"> Go to entry pet</a>
+       </p>
+       <p>
+            <a href="#" t:type="PageLink" t:page="ViewPet"> Go to view pet</a>
+       </p>
+        <p>
+            <a href="#" t:type="PageLink" t:page="EntrySalesman"> Go to entry salesman</a>
+       </p>
+       <p>
+            <a href="#" t:type="PageLink" t:page="ViewSalesman"> Go to view salesman</a>
+       </p>
+         <p>
+            <a href="#" t:type="PageLink" t:page="EntryCostumer"> Go to entry costumer</a>
+       </p>
+         <p>
+            <a href="#" t:type="PageLink" t:page="ViewCostumer"> Go to view customer</a>
+       </p>
     </body>
    
    </html>

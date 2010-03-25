@@ -1,0 +1,19 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd">
+    <head>
+        <title>PetShop- customer entry page</title>
+    </head>
+    <body>
+        <h1>PetShop- customer entry page</h1>
+
+		<p> Submit a customer: </p>
+		<t:form t:id="costumerInputForm">
+			<p>
+			<label t:type="label" for="name" >Name:</label> <br/>
+			<input type="text" t:type="textfield" t:id="name" t:value="costumer.name"/>
+			</p>
+			
+			<input type="submit" value="Remember"/>
+			</t:form>        
+            <p>[<t:pagelink t:page="Index">Go to index page</t:pagelink>]</p>
+    </body>
+</html>

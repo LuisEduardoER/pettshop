@@ -7,19 +7,19 @@
        <body>
        <h1>PetShop - Pet entry  page</h1>
      
-     <p> Submit pey: </p>
+     <p> Submit pet: </p>
      <t:form t:id="petInputForm">
      <p>
      <label t:type="label" for="petName" >Pet name:</label> <br/>
-     <input type="text" t:type="textfield" t:id="petName" t:value="petName"/>
+     <input type="text" t:type="textfield" t:id="petName" t:value="pet.petName"/>
      </p>
      <p>
      <label t:type="label" for="type" >Pet type:</label> <br/>
-     <input type="text" t:type="textfield" t:id="type" t:value="petType"/>
+     <input type="text" t:type="textfield" t:id="type" t:value="pet.type"/>
      </p>
      <p>
         <label t:type="label" for="shortDescription" >Pet description:</label> <br/>
-     	<input type="text" t:type="textfield" t:id="shortDescription" t:value="petShortDescription"/>
+     	<input type="text" t:type="textfield" t:id="shortDescription" t:value="pet.shortDescription"/>
        </p>
        <input type="submit" value="Zapamti"/>
        </t:form>

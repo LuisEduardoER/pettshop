@@ -2,6 +2,7 @@ package com.fit.services;
 
 import java.io.IOException;
 
+
 import org.apache.tapestry5.*;
 import org.apache.tapestry5.ioc.MappedConfiguration;
 import org.apache.tapestry5.ioc.OrderedConfiguration;
@@ -12,6 +13,14 @@ import org.apache.tapestry5.services.RequestFilter;
 import org.apache.tapestry5.services.RequestHandler;
 import org.apache.tapestry5.services.Response;
 import org.slf4j.Logger;
+
+import com.fit.service.CostumerBean;
+import com.fit.service.Costumers;
+
+import com.fit.service.Pets;
+import com.fit.service.PetsBean;
+import com.fit.service.Salesmen;
+import com.fit.service.SalesmenBean;
 
 /**
  * This module is automatically included as part of the Tapestry IoC Registry, it's a good place to
@@ -116,4 +125,15 @@ public class AppModule
         
         configuration.add("Timing", filter);
     }
+    public static Pets buildPets() {
+		return new PetsBean();
+	}
+
+	public static Costumers buildCostumers() {
+		return new CostumerBean();
+	}
+
+	public static Salesmen buildSalesmen() {
+		return new SalesmenBean();
+	}
 }

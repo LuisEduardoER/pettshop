@@ -1,0 +1,22 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd">
+    <head>
+        <title>PetShop - customer view page</title>
+    </head>
+    <body>
+        <h1>PetShop - customer view page</h1>
+
+        <p> List of customers (${costumers.retrieve().size()} objects listed): </p>
+
+        <table width="100%">
+            <tr t:type="loop" t:source="costumers.retrieve()" t:value="currentCostumer">
+                <td>
+                    ${currentCostumer.name}
+                </td>
+            </tr>
+        </table>
+
+        <p>
+            <a href="#" t:type="PageLink" t:page="Index"> Go to Index page</a>
+        </p>
+    </body>
+</html>
