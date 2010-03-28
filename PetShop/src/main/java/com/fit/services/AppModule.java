@@ -2,6 +2,8 @@ package com.fit.services;
 
 import java.io.IOException;
 
+import java.util.LinkedList;
+
 
 import org.apache.tapestry5.*;
 import org.apache.tapestry5.ioc.MappedConfiguration;
@@ -14,13 +16,29 @@ import org.apache.tapestry5.services.RequestHandler;
 import org.apache.tapestry5.services.Response;
 import org.slf4j.Logger;
 
-import com.fit.service.CostumerBean;
+
+import com.fit.beans.CostumerBean;
+import com.fit.beans.PetBean;
+import com.fit.beans.SalesmanBean;
+import com.fit.beans.UserBean;
+import com.fit.interfaces.Buy;
+import com.fit.interfaces.Costumer;
+
+import com.fit.interfaces.Pet;
+import com.fit.interfaces.Salesman;
+import com.fit.interfaces.User;
+import com.fit.service.CostumersBean;
 import com.fit.service.Costumers;
+
+import com.fit.service.Buys;
+import com.fit.service.BuysBean;
 
 import com.fit.service.Pets;
 import com.fit.service.PetsBean;
 import com.fit.service.Salesmen;
 import com.fit.service.SalesmenBean;
+import com.fit.service.Users;
+import com.fit.service.UsersBean;
 
 /**
  * This module is automatically included as part of the Tapestry IoC Registry, it's a good place to
@@ -126,14 +144,54 @@ public class AppModule
         configuration.add("Timing", filter);
     }
     public static Pets buildPets() {
-		return new PetsBean();
+    	Pets jj = new PetsBean();
+    	Pet j = new PetBean();
+		j.setType("Pet Shop 1");
+		j.setBuy(new LinkedList<Buy>());
+		j.setShortDescription("Kanarinac");
+		j.setPetName("Roki");
+		
+		jj.save(j);
+		
+		return jj;
 	}
 
 	public static Costumers buildCostumers() {
-		return new CostumerBean();
+		CostumersBean cb = new CostumersBean();
+		Costumer c = new CostumerBean();
+		c.setBuy(new LinkedList<Buy>());
+		c.setName("Korisnik");
+		
+		cb.save(c);
+		
+		return cb;
 	}
 
 	public static Salesmen buildSalesmen() {
-		return new SalesmenBean();
+
+		Salesmen sb = new SalesmenBean();
+		Salesman s = new SalesmanBean();
+		s.setName("WebApp ");
+		s.setBuy(new LinkedList<Buy>());
+		sb.save(s);
+		
+		return sb;
+	}
+
+	public static Buys buildBuys() {
+		return new BuysBean();
+	}  
+	
+	
+	public static Users buildUsers() {
+		// Primjer kako unaprijed dodati neke objekte u hash mapu user-a
+		Users users = new UsersBean();
+		User u = new UserBean();
+
+		u.setUserName("admin");
+		u.setPassword("admin");
+		
+		users.save(u);
+		return users;
 	}
 }

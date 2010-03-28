@@ -1,0 +1,26 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd">
+<head>
+<title>PetShop - buy entry page</title>
+</head>
+<body>
+<h1>PetShop - buy entry page</h1>
+
+
+<b>
+<p>Chosen pet: ${buyPet} <a href="#" t:type="PageLink"
+	t:page="ViewPet">Add Pet</a></p>
+<p>Chosen Salesman: ${buySalesman} <a href="#"
+	t:type="PageLink" t:page="ViewSalesman">Add Salesman</a></p>
+<p>Chosen Customer: ${buyCostumer} <a href="#" t:type="PageLink"
+	t:page="ViewCostumer">Add Customer</a></p>
+</b>
+
+
+<t:form t:id="buyInputForm">
+
+	<p><input type="submit" value="Remember" /></p>
+</t:form>
+
+<p>[<t:pagelink t:page="Index">Go to index page</t:pagelink>]</p>
+</body>
+</html>

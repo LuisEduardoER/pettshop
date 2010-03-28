@@ -1,0 +1,31 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd">
+    <head>
+        <title>PetShop - buy view page</title>
+    </head>
+    <body>
+        <h1>PetShop - buy view page</h1>
+
+        <p> List of buys(${buys.retrieve().size()} objects listed): </p>
+
+        <table width="100%">
+            <tr t:type="loop" t:source="buys.retrieve()" t:value="currentBuy">
+                <td>
+                    ${currentBuy.id}
+                </td>
+                <td>
+                    ${currentBuy.costumer.name}
+                </td>
+                <td>
+                    ${currentBuy.salesman.name}
+                </td>
+                <td>
+                    ${firstPet.petName}
+                </td>
+            </tr>
+        </table>
+
+        <p>
+            <a href="#" t:type="PageLink" t:page="Index"> Go to Index page</a>
+        </p>
+    </body>
+</html>

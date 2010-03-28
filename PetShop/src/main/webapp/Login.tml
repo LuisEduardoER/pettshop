@@ -1,0 +1,37 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd">
+    <head>
+		<title>PetShop Login Page</title>
+    </head>
+    <body>
+        <h1>PetShop Login Page</h1>
+
+        <t:form t:id="loginForm">
+            <table>
+                <tr>
+                    <td>
+                        <t:label t:for="userName"></t:label>:
+                    </td>
+                    <td>
+                        <input type="text" t:id="userName" t:type="TextField" t:label="User Name" t:value="userName"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <t:label t:for="password"></t:label>:
+                    </td>
+                    <td>
+                        <input type="text" t:id="password" t:type="PasswordField" t:label="Password" t:value="password"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Log In"/>
+                    </td>
+                </tr>
+            </table>
+        </t:form>
+        <p>
+            <a href="#" t:type="PageLink" t:page="Registration">Or register</a>
+        </p>
+    </body>
+</html>

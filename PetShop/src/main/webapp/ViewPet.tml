@@ -13,6 +13,9 @@
                 <td>
                     <a href="#" t:type="ActionLink" t:context="currentPet.petName" t:id="petDetailsLink">${currentPet.petName}</a>
                 </td>
+                 <td>
+                    <a href="#" t:type="ActionLink" t:context="currentPet.petName" t:id="entryBuyLink">INSERT</a>
+                </td>
                
             </tr>
         </table>

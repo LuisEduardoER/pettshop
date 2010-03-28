@@ -12,6 +12,9 @@
                 <td>
                     ${currentSalesman.name}
                 </td>
+                <td>
+                    <a href="#" t:type="ActionLink" t:context="currentSalesman.name" t:id="entrySalesmanLink">INSERT</a>
+                </td>
             </tr>
         </table>
 

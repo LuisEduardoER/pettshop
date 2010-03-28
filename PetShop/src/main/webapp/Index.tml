@@ -6,6 +6,9 @@
        
        <body>
        <h1>Pet Shop Start Page</h1>
+        <h1>PetShop Start Page</h1>
+<p>Logged user: ${user.username}</p>
+<p><a href="#" t:type="PageLink" t:page="Logout">Logout</a></p><br/>
      
     <p> Menu: </p>
     
@@ -28,6 +31,11 @@
          <p>
             <a href="#" t:type="PageLink" t:page="ViewCostumer"> Go to view customer</a>
        </p>
+       <p>
+       		<a href="#" t:type="PageLink" t:page="EntryBuy"> Go to entry buy page</a>
+       	</p>
+       
+              <p><a href="#" t:type="PageLink" t:page="ViewBuy"> Go to view buy page</a></p>
     </body>
    
    </html>

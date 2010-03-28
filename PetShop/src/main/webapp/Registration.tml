@@ -1,0 +1,12 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd">
+    <head>
+        <title>PetShop - Registration page</title>
+    </head>
+    <body>
+        <h1>PetShop - Registration page</h1>
+
+       
+        <a href="#" t:type="PageLink" t:page="Index">
+				Back to the Index Page</a>
+    </body>
+</html>
